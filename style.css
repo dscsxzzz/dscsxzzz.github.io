@@ -1,0 +1,24 @@
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/410/412/HD-wallpaper-kaneki-ken-anime-kaneki-tokyo-ghoul.jpg);
+  margin: 20px;
+}
+header{
+  text-align: center;
+  background-color: rgb(255,255,255, 0.5);
+}
+
+nav{
+  text-align:center;
+}
+
+.nav_list_item{
+  width:100%;
+  padding: 15px;
+  display:inline;
+  background-color:white;
+}
+
+a:hover {
+  background-color: blue;
+  color:red;
+}
