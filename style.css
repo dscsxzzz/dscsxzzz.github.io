@@ -1,24 +1,98 @@
 body {
-  background-image: url(https://w0.peakpx.com/wallpaper/410/412/HD-wallpaper-kaneki-ken-anime-kaneki-tokyo-ghoul.jpg);
-  margin: 20px;
+  background-image: url(https://i.pinimg.com/originals/9c/70/ab/9c70ab2bc216857d613271757e88a60b.jpg);
+  font-family: "Roboto Mono", monospace;
 }
-header{
+header {
   text-align: center;
-  background-color: rgb(255,255,255, 0.5);
+}
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
-nav{
-  text-align:center;
+nav {
+  margin-bottom: 30px;
+  margin-left: -40px;
+  text-align: center;
+}
+.nav_list li {
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 40px;
+  display: inline;
+}
+.nav_list li a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(0, 0, 0);
 }
 
-.nav_list_item{
-  width:100%;
-  padding: 15px;
-  display:inline;
-  background-color:white;
+.nav_list li a:hover {
+  background-color: rgba(214, 42, 42, 0.432);
+  color: rgb(250, 250, 250);
 }
 
-a:hover {
-  background-color: blue;
-  color:red;
+aside {
+  background-color: rgba(214, 42, 42, 0.432);
+  height: 100%;
+  width: 10%;
+}
+
+main {
+  display: flex;
+  margin-left: 50px;
+  width: 50%;
+}
+
+section {
+  height: 385px;
+}
+
+.main_info {
+  margin-left: 15px;
+}
+
+.main_info li::marker {
+  color: rgb(255, 29, 29);
+}
+
+h1 {
+  text-align: center;
+}
+.info {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+}
+.list_of_info {
+  list-style-type: none;
+  margin-left: -10px;
+  padding: 10px;
+}
+
+.list_item {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  width: fit-content;
+  padding: 10px;
+}
+.list_item:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.list_item:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.list_item:hover:after,
+.list_item:hover:before {
+  transform: scaleX(1);
 }
